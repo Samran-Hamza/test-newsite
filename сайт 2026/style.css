@@ -32,7 +32,7 @@
   }
   
   .card-image {
-    width: 35%;
+    width: 60%;
     height: 100%;
   }
   
@@ -44,7 +44,7 @@
   }
   
   .card-content {
-    width: 65%;
+    width: 55%;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -71,6 +71,11 @@
     text-decoration: none;
     color: #000;
     align-self: flex-start;
+  }
+
+  .card-content a:hover {
+    color: #ff6600; /* Ярко-оранжевый цвет */
+    /* Можно использовать другие оттенки: #f80, #ff8c00, #ff4500 */
   }
   
   .card-side {
@@ -104,9 +109,35 @@
     font-size: 22px;
     color: #5b3df5;
     cursor: pointer;
+    transition: all 0.3s ease; /* Добавляем плавный переход для всех свойств */
   }
-  
+
   .arrow:hover {
     background: #5b3df5;
     color: #fff;
+    transform: rotate(360deg);
+    transition: transform 0.5s ease, background 0.3s ease, color 0.3s ease;
   }
+
+  @keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+
+/* Если хотите бесконечное вращение при наведении: */
+/*
+.arrow:hover {
+    background: #5b3df5;
+    color: #fff;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+*/
