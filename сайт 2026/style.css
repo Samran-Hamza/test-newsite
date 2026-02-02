@@ -1,14 +1,14 @@
 /* ПОДКЛЮЧЕНИЕ ШРИФТОВ ВЫШКИ */
 @font-face {
   font-family: 'HSESans';
-  src: url('fonts/HSESans-Regular.otf') format('opentype');
+  src: url('HSESans-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'HSESans';
-  src: url('fonts/HSESans-Bold.otf') format('opentype');
+  src: url('HSESans-Bold.otf') format('opentype');
   font-weight: bold;
   font-style: normal;
 }
@@ -141,3 +141,4 @@ body {
       transform: rotate(360deg);
   }
 }
+
