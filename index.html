@@ -42,16 +42,40 @@
 <script>
 const news = [
   {
-    title: 'НАУЧНЫЕ ПРОЕКТЫ',
-    desc: 'Студенты могут участвовать в научных исследованиях уже с первого курса вместе с преподавателями',
-    img: 'images/hse3.jpg',
-    link: 'https://admissions.hse.ru/'
+    title: 'СТУДЕНЧЕСКАЯ МОБИЛЬНОСТЬ',
+    desc: 'Иностранным студентам Вышки доступна международная студенческая мобильность: от Азии до Латинской Америки',
+    img: 'images/car1.jpg',
+    link: 'https://studyabroad.hse.ru/'
   },
   {
-    title: 'КАРЬЕРА ПОСЛЕ ВЫПУСКА',
-    desc: 'Выпускники Вышки работают в ведущих компаниях мира — от консалтинга до IT',
-    img: 'images/hse4.jpg',
-    link: 'https://alumni.hse.ru/'
+    title: 'ИНДИВИДУАЛЬНАЯ ОБРАЗОВАТЕЛЬНАЯ ТРАЕКТОРИЯ',
+    desc: 'Помимо основного направления иностранные студенты Вышки могут освоить дополнительные навыки в любой интересующей области знаний благодаря системе Майноров и общеуниверситетских факультативов.',
+    img: 'images/car2.jpg',
+    link: 'https://electives.hse.ru/'
+  },
+  {
+    title: 'ЛУЧШАЯ РЕПУТАЦИЯ НА РЫНКЕ РАБОТОДАТЕЛЕЙ',
+    desc: 'Вышка — №1 в рейтинге <a href="https://www.forbes.ru/education/547903-20-rossijskih-vuzov-s-lucsej-reputaciej-u-rabotodatelej-2025-rejting-forbes" target="_blank" style="color: #0055cc; text-decoration: none;">Forbes Education (2025)</a> по репутации среди работодателей. Их опрос подтвердил, что выпускников ВШЭ считают наиболее подготовленными и охотнее всего берут на работу.',
+    img: 'images/car3.jpg',
+    link: 'https://electives.hse.ru/'
+  },
+  {
+    title: 'ДОСТУПНОЕ ПРОЖИВАНИЕ В ОБЩЕЖИТИИ',
+    desc: 'Иностранным студентам, обучающимся по квоте, доступно проживание в комфортных общежитиях блочного, коридорного и квартирного типа. Стоимость проживания в Москве в среднем 2 000 руб. в месяц.',
+    img: 'images/car4.jpg',
+    link: 'https://electives.hse.ru/'
+  },
+  {
+    title: 'ПРОГРАММЫ ДВУХ ДИПЛОМОВ С ВЕДУЩИМИ УНИВЕРСИТЕТАМИ МИРА',
+    desc: 'Получи сразу два диплома о высшем образовании – в Вышке есть совместные программы с университетами Армении, Бразилии, Германии, Италии, Китая, Марокко, Узбекистана, Южной Кореи.',
+    img: 'images/car5.jpg',
+    link: 'https://iai.hse.ru/en/impartner/ddp_programmes'
+  },
+  {
+    title: 'ЛУЧШИЙ ОПЫТ СТУДЕНЧЕСТВА',
+    desc: 'Вышка — это стиль жизни. Круглосуточная библиотека, коворкинги от топ-компаний, национальные клубы, карьерные события и море мероприятий. Становитесь частью нашего глобального сообщества!.',
+    img: 'images/car6.jpg',
+    link: 'https://extra.hse.ru/#events'
   }
 ];
 
@@ -60,7 +84,7 @@ let index = 0;
 function render() {
   const n = news[index];
   document.getElementById('newsTitle').textContent = n.title;
-  document.getElementById('newsDesc').textContent = n.desc;
+  document.getElementById('newsDesc').innerHTML = n.desc;
   document.getElementById('newsImage').src = n.img;
   document.getElementById('newsLink').href = n.link;
 }
